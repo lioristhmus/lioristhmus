@@ -22,30 +22,29 @@ This series develops twistor descriptions of four-dimensional Einstein geometry 
 The smooth Lorentzian correspondence (Papers 3–4) does **not** logically depend on Papers 1–2 except in the dedicated analytic-locus comparison sections (Paper 3 §9; Paper 4 §§15–16). Paper 4 Appendix A uses no twistor-correspondence inputs and feeds into the analytic–smooth marked development comparison (Theorem 16.8, Corollary 16.9).
 
 ```mermaid
-flowchart TB
-    subgraph Analytic["Analytic Branch<br/>(arbitrary Λ ∈ ℂ)"]
-        P1["Paper 1: Local Analytic<br/>(T₀ Čech pairs, optical bundle,<br/>Heisenberg operator model,<br/>Schwarzschild)"]
-        P2["Paper 2: Global Analytic<br/>(Source atlases, null monodromy,<br/>parametrized incidence,<br/>Nariai obstructions)"]
-        P1 --> P2
-    end
-
-    subgraph Smooth["Smooth Lorentzian Branch<br/>(Λ = 0, independent of 1–2)"]
-        P3["Paper 3: Local Smooth<br/>(CR pairs on ℝ³×ℂℙ¹,<br/>3-response York inverse,<br/>Czimek exterior extension,<br/>covariant wave kernel)"]
-        P4["Paper 4: Global Smooth<br/>(4-trace global wave class,<br/>causal embeddings, atlas completion,<br/>maximal developments, families)"]
-        P3 --> P4
-    end
-
-    A4["Paper 4, Appendix A (Thm. A.4)<br/>(No twistor inputs: analytic<br/>persistence for compact Cauchy data)"]
-    B4["Paper 4, §§15–16<br/>(Thm. 16.8, Cor. 16.9)<br/>(Analytic–smooth maximal<br/>source comparison)"]
-
-    P1 -.->|"Analytic locus<br/>(Paper 3 §9)"| P3
-    P2 -.-> B4
-    P4 -.-> B4
+---
+config:
+  block:
+    padding: 20
+  themeCSS: |
+    .flowchart-link[id$="-P1-P3"], .flowchart-link[id$="-P2-B4"], .flowchart-link[id$="-P4-B4"] {
+      stroke-dasharray: 5 4 !important;
+    }
+---
+block-beta
+    columns 3
+    Analytic["Analytic Branch<br/>(arbitrary Λ ∈ ℂ)"] space Smooth["Smooth Lorentzian Branch<br/>(Λ = 0, independent of 1–2)"]
+    P1["Paper 1: Local Analytic<br/>(T₀ Čech pairs, optical bundle,<br/>Heisenberg operator model,<br/>Schwarzschild)"] space P3["Paper 3: Local Smooth<br/>(CR pairs on ℝ³×ℂℙ¹,<br/>3-response York inverse,<br/>Czimek exterior extension,<br/>covariant wave kernel)"]
+    P2["Paper 2: Global Analytic<br/>(Source atlases, null monodromy,<br/>parametrized incidence,<br/>Nariai obstructions)"] space P4["Paper 4: Global Smooth<br/>(4-trace global wave class,<br/>causal embeddings,<br/>atlas completion,<br/>maximal developments, families)"]
+    A4["Paper 4, Appendix A<br/>(Thm. A.4)<br/>(No twistor inputs: analytic<br/>persistence for compact Cauchy data)"] space B4["Paper 4, §§15–16<br/>(Thm. 16.8, Cor. 16.9)<br/>(Analytic–smooth maximal<br/>source comparison)"]
+    P1 --> P2
+    P3 --> P4
+    P1 -- "Analytic locus<br/>(Paper 3 §9)" --> P3
+    P2 --> B4
+    P4 --> B4
     A4 --> B4
-
-    %% Place Appendix A below the two branches.
-    P2 ~~~ A4
-    P4 ~~~ A4
+    style Analytic fill:transparent,stroke-width:0px
+    style Smooth fill:transparent,stroke-width:0px
 ```
 
 ---
