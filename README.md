@@ -2,7 +2,7 @@
 
 **Lior Isthmus** · [ORCID 0009-0004-7908-9876](https://orcid.org/0009-0004-7908-9876) · [lioristhmus@proton.me](mailto:lioristhmus@proton.me)
 
-This series develops twistor descriptions of four-dimensional Einstein geometry that retain both chiralities of gravity. It gives local and global results in two settings: analytic Einstein geometry at a fixed cosmological constant and smooth Lorentzian vacuum geometry.
+What twistor data determine a four-dimensional Einstein spacetime when both chiralities of gravity interact? These four preprints study this question locally and globally, in analytic Einstein geometry and in smooth Lorentzian vacuum gravity.
 
 ---
 
