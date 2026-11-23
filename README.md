@@ -36,6 +36,7 @@ The smooth Lorentzian correspondence (Papers 3–4) does **not** logically depen
 ```mermaid
 ---
 config:
+  theme: neutral
   block:
     padding: 20
   themeCSS: |
@@ -55,6 +56,8 @@ block-beta
     P2 --> B4
     P4 --> B4
     A4 --> B4
+    classDef paper fill:#f5f5f5,stroke:#000000,stroke-width:1px,color:#111111
+    class P1,P2,P3,P4,A4,B4 paper
     style Analytic fill:transparent,stroke-width:0px
     style Smooth fill:transparent,stroke-width:0px
 ```
