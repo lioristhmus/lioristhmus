@@ -31,9 +31,11 @@ These four preprints address Penrose’s gravitational googly problem. What twis
 
 ## Computational Supplements
 
+Each supplement includes the inputs, software environment, negative controls, recorded results, and checksums needed to reproduce its calculations. The checks cover selected identities and examples. The arguments for analytic convergence, topology, and categorical equivalence are given in the manuscripts.
+
 ### Paper 1. Local analytic Einstein germs
 
-The 28 records include exact checks of twistor formulas and numerical diagnostics for the record recursion. [Check index](https://github.com/lioristhmus/projective-twistor-einstein-germs/blob/paper-v1.1/computations/CHECKS.md) · [Supplement ZIP](https://github.com/lioristhmus/projective-twistor-einstein-germs/releases/download/paper-v1.1/local-einstein-computations-0.2.0-r3.zip)
+The 28 records include exact checks of twistor formulas and numerical diagnostics for the record recursion. The `independent/` directory contains cross-checks using a second implementation. [Check index](https://github.com/lioristhmus/projective-twistor-einstein-germs/blob/paper-v1.1/computations/CHECKS.md) · [Supplement ZIP](https://github.com/lioristhmus/projective-twistor-einstein-germs/releases/download/paper-v1.1/local-einstein-computations-0.2.0-r3.zip)
 
 ### Paper 2. Global analytic Einstein spacetimes
 
@@ -84,16 +86,12 @@ block-beta
 
 ---
 
-## Status, Verification Scope & Lean Progress
+## Preprint Status & Lean Formalization
 
 All four manuscripts are unrefereed preprints on classical four-dimensional gravity. [Paper 4, §§17.2–17.3](https://github.com/lioristhmus/smooth-global-twistor-sources/blob/v1.1/paper/smooth-global-twistor-sources-en-v1.1.md?plain=1#L4490) discusses the scope of the correspondence. Critical scrutiny, counterexamples, and independent verification of the manuscripts are welcome.
 
-<details>
-<summary><strong>Computational checks and Lean formalization</strong></summary>
+The Lean 4 formalization of Paper 1 is in progress in a private repository. Its current milestone is the coefficient comparison in Theorem 6.3, a step toward the main correspondence in Theorem 2.4.
 
-- **Reproducible computations:** Each repository ships pinned Docker configurations, exact inputs, negative controls, recorded results, and `SHA256SUMS` manifests. Paper 1's `independent/` witness group is a separate-implementation cross-check (not third-party certification); its 28 primary records include both exact symbolic/finite checks and numerical diagnostics/observations. These computations verify selected identities and examples—**they do not formally certify the analytic convergence, topological, or categorical proofs of the manuscripts.**
-- **Lean 4 formalization:** A Lean 4 formalization of Paper 1 is in progress in a private repository, with the coefficient comparison in Theorem 6.3 as the current milestone toward the main correspondence in Theorem 2.4.
-
-</details>
+---
 
 **Licenses:** Manuscripts, documentation, and recorded data are **CC BY 4.0**; code is **Apache-2.0**.
