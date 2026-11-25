@@ -1,6 +1,6 @@
 # Two-Chirality Twistor Correspondences for Einstein Geometry
 
-**Lior Isthmus** · [ORCID 0009-0004-7908-9876](https://orcid.org/0009-0004-7908-9876) · [lioristhmus@proton.me](mailto:lioristhmus@proton.me)
+**Lior Isthmus**
 
 These four preprints address Penrose’s gravitational googly problem. What twistor data determine a four-dimensional Einstein geometry when both chiralities of gravity interact? We construct local and global correspondences for analytic Einstein geometry at each fixed cosmological constant, and for smooth Lorentzian vacuum gravity, with the global smooth result formulated on globally hyperbolic spacetimes.
 
