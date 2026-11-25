@@ -93,7 +93,11 @@ block-beta
 
 All four manuscripts are unrefereed preprints on classical four-dimensional gravity. For the scope of the classical wave and operator constructions, see [Paper 4, §17.2](https://github.com/lioristhmus/smooth-global-twistor-sources/blob/v1.1/paper/smooth-global-twistor-sources-en-v1.1.md?plain=1#L4490). Critical scrutiny, counterexamples, and independent verification of the manuscripts are welcome.
 
-The Lean 4 formalization of Paper 1 is in progress in a private repository. Its current milestone is the coefficient comparison in Theorem 6.3, a step toward the main correspondence in Theorem 2.4.
+The private Lean 4 formalization of Paper 1 covers the identification of the two analytic Čech classes with free curvature data ([Theorem 3.1](https://github.com/lioristhmus/projective-twistor-einstein-germs/blob/paper-v1.1/release/paper-v1.1/manuscript.md?plain=1#L270)), the completion of those data to curvature jets ([Lemma 3.2](https://github.com/lioristhmus/projective-twistor-einstein-germs/blob/paper-v1.1/release/paper-v1.1/manuscript.md?plain=1#L349)), convergence of the curvature flows ([Theorem 3.3](https://github.com/lioristhmus/projective-twistor-einstein-germs/blob/paper-v1.1/release/paper-v1.1/manuscript.md?plain=1#L389)), and the Cartan construction of the corresponding holomorphic Einstein germ ([Proposition 4.1](https://github.com/lioristhmus/projective-twistor-einstein-germs/blob/paper-v1.1/release/paper-v1.1/manuscript.md?plain=1#L473)). All numbered results in Appendices A and B are formalized, including uniqueness of the formal metric in marked normal coordinates ([Proposition A.4](https://github.com/lioristhmus/projective-twistor-einstein-germs/blob/paper-v1.1/release/paper-v1.1/manuscript.md?plain=1#L2387)) and the all-order coefficient bounds for the original nonlinear curvature recursion ([Theorem B.4](https://github.com/lioristhmus/projective-twistor-einstein-germs/blob/paper-v1.1/release/paper-v1.1/manuscript.md?plain=1#L2671)).
+
+The next release milestone is [Theorem 6.3](https://github.com/lioristhmus/projective-twistor-einstein-germs/blob/paper-v1.1/release/paper-v1.1/manuscript.md?plain=1#L1289). Lean already proves the finite-order comparison under explicit normalization and metric-matching hypotheses. Work is under way to derive those hypotheses from the constructions in §§5–6.
+
+As of November 2026, the Lean development comprises approximately 480,000 lines of project source, including definitions, proofs, and verification modules. This count excludes Mathlib and working drafts.
 
 ---
 
