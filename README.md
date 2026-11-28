@@ -4,7 +4,7 @@
 
 What twistor data determine a four-dimensional Einstein metric when both chiralities of gravity interact? These four preprints address this question in Penrose’s gravitational googly programme. In both local constructions, two classes on a fixed flat model supply the free data from which the Einstein metric is recovered. Paper 1 treats analytic Einstein germs at any fixed cosmological constant. Paper 3 treats smooth Lorentzian vacuum germs at $\Lambda=0$.
 
-[Paper 1 in Lean 4 · Proof blueprint](https://github.com/lioristhmus/projective-twistor-einstein-germs-lean/blob/main/BLUEPRINT.md)
+**Paper 1 · Lean 4 milestone.** The coefficient comparison and convergence result in Theorem 6.3 is available for independent inspection while formalization of the rest of the paper continues. [Read the proof blueprint](https://github.com/lioristhmus/projective-twistor-einstein-germs-lean/blob/main/BLUEPRINT.md)
 
 ---
 
@@ -97,7 +97,7 @@ All four manuscripts are unrefereed preprints on classical four-dimensional grav
 
 The public Lean 4 development for Paper 1 (v1.1) includes all-order bounds for the nonlinear curvature recursion (Theorem B.4) and convergence of the curvature flows for both chiralities (Theorem 3.3). For one fixed admissible presentation and the fixed trial rule used in Proposition 5.9, Lean verifies the coefficient comparison in Theorem 6.3. At every finite order, all 14 families of stored components, including the inverses, agree as germs along the marked sky with the Taylor jets of a common analytic representative. Their series converge at ε = 1 with a geometric tail bound uniform on the retained parameter set.
 
-For the forward construction in Theorem 2.4, the ray data at ε = 1 recover a marked analytic Einstein metric germ whose two free curvature records agree with the input. Coverage of Theorem 2.4 is partial. The clean rebuild covered 4,109 project modules. Axiom checks on all 20 endpoint declarations reported only `propext`, `Classical.choice`, and `Quot.sound`. [Build and verification scope](https://github.com/lioristhmus/projective-twistor-einstein-germs-lean#source-and-build)
+For the forward construction in Theorem 2.4, the ray data at ε = 1 recover a marked analytic Einstein metric germ whose two free curvature records agree with the input. Coverage of Theorem 2.4 is partial. The core release comprises about 632,000 lines of Lean source across 4,109 project modules and has been rebuilt from a fresh clone. Axiom checks on all 20 endpoint declarations reported only `propext`, `Classical.choice`, and `Quot.sound`. [Build and verification scope](https://github.com/lioristhmus/projective-twistor-einstein-germs-lean#main-formalization)
 
 ---
 
